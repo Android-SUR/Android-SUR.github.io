@@ -17,7 +17,7 @@
 This repository contains our continous monitoring infrasturcture based on Android-MOD, a customized Android system that records system-level traces upon the occurrence of slow UI responsiveness (SUR) events, as well as our efforts for improving UI responsiveness on Android devices. Our Android-MOD system is built upon vanilla Andorid 10/11/12. Therefore, you'll be able to run codes in this repo by patching these modifications to proper framework components.
 
 ## Data Release
-We have released a portion of the representative sample data (with proper anonymization) for references [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/dataset). As to the full dataset, we are still in discussion with the authority to what extend can it be released. We will make the rest dataset in public as soon as possible after receiving the permission and desensitizing the dataset.
+We have released a portion of the representative sample data (with proper anonymization) for references [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data). As to the full dataset, we are still in discussion with the authority to what extend can it be released. We will make the rest dataset in public as soon as possible after receiving the permission and desensitizing the dataset.
 
 For each file in the dataset, we list the specific information coupled with the regarding description as follows.
 

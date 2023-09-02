@@ -31,6 +31,7 @@ dataset
 ```
 
 ### models.xlsx
+
 | Column Name                | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
 | `model`                    | Device model                                                 |
@@ -51,6 +52,7 @@ dataset
 | `energy_aopt`              | Daily device energy after optimizations                      |
 
 ### apps.xlsx
+
 | Column Name                | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
 | `app`                      | App name                                                     |
@@ -67,6 +69,7 @@ dataset
 | `NDSURPU`                  | Number of daily SUR events per user                          |
 
 ### memory.xlsx
+
 | Column Name               | Description                                                                              |
 | ------------------------- | -----------------------------------------------------------------------------------------|
 | `app`                     | App name                                                                                 |
@@ -81,7 +84,18 @@ dataset
 
 ### iOS-Android.xlsx
 
+| Column Name                        | Description                                             |
+| ---------------------------------- | --------------------------------------------------------|
+| `app`                              | App name                                                |
+| `Android_CPU_utilization(%)`       | CPU utilization of apps on Android devices              |
+| `iOS_CPU_utilization(%)`           | CPU utilization of apps on iOS devices                  |
+| `Android_process_number`           | Number of processes in apps on Android devices          |
+| `iOS_process_number`               | Number of processes in apps on iOS devices              |
+| `Android_memory_consumption(MB)`   | Memory consumption of the app on Android devices|
+| `iOS_memory_consumption(MB)`       | Memory consumption of the app on iOS devices    |
+
 ### energy.xlsx
+
 
 ## Codebase Organization
 Currently, We have release a portion of the implementation code for references [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code). For the full code, we are scrutinizing the codebase to avoid possible anonymity violations. After that, we will release the source code of this study as soon as we have finished examining it and acquired its release permission from the authority. The codebase is organized as follows.

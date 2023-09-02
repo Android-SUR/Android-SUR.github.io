@@ -129,7 +129,7 @@ Currently, We have release a portion of the implementation code for references [
 ```
 code
 |---- monitor infrastructure
-|---- authentic sensing layer
+|---- uniform authentic sensing
 ```
 
 

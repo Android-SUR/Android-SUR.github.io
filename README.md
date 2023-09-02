@@ -103,11 +103,11 @@ dataset
 | `Android_memory_consumption(MB)`   | Memory consumption of the app on Android devices|
 | `iOS_memory_consumption(MB)`       | Memory consumption of the app on iOS devices    |
 
-### energy.xlsx
+### energy.csv
 
 | Column Name                                 | Description                                                                                        |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------|
-| `oneid`                                     | Unique identifier for the device 											                       |
+| `oneid`                                     | Unique identifier for the event 											                                             |
 | `date`                                      | Event date                                                                                         |
 | `event_name`                                | Event Name                                                                                         |
 | `model`                                     | Device model                                                                                       |

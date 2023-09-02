@@ -71,11 +71,11 @@ dataset
 
 ### app-scenario.xlsx
 
-| Column Name                | Description                                                                          |
-| -------------------------- | ------------------------------------------------------------------------------------ |
-| `scenario`                 | Specific functions within an app, such as com.tencent.mm/com.tencent.mm.ui.LauncherUI|
-| `SUR_cnt`                  | Daily number of SUR events of such scenario                                          |
-| `device_cnt`               | Daily number of devices where SUR events occurs in such scenario                     |
+| Column Name                | Description                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------|
+| `scenario`                 | Specific functions within apps, e.g. com.tencent.mm/com.tencent.mm.ui.LauncherUI|
+| `SUR_cnt`                  | Daily number of SUR events of such scenario                                     |
+| `device_cnt`               | Daily number of devices where SUR events occurs in such scenario                |
 
 ### memory.xlsx
 

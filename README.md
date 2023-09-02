@@ -98,8 +98,8 @@ dataset
 | `app`                              | App name                                                |
 | `Android_CPU_utilization(%)`       | CPU utilization of apps on Android devices              |
 | `iOS_CPU_utilization(%)`           | CPU utilization of apps on iOS devices                  |
-| `Android_process_number`           | Number of processes in apps on Android devices          |
-| `iOS_process_number`               | Number of processes in apps on iOS devices              |
+| `Android_process_number`           | Number of processes of apps on Android devices          |
+| `iOS_process_number`               | Number of processes of apps on iOS devices              |
 | `Android_memory_consumption(MB)`   | Memory consumption of the app on Android devices|
 | `iOS_memory_consumption(MB)`       | Memory consumption of the app on iOS devices    |
 

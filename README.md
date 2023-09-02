@@ -39,18 +39,18 @@ dataset
 | `release_time`             | Release time of the model                                    |
 | `CPU_model`                | CPU type                                                     |
 | `CPU_frequency`            | CPU frequency                                                |
-| `memory`                   | RAM capacity                                                 |
-| `storage`                  | ROM capacity                                                 |
+| `memory`                   | RAM capacity in MB                                           |
+| `storage`                  | ROM capacity in MB                                           |
 | `version`                  | Android version                                              |
-| `user`                     | Proportion of users                                         |
-| `prevalence_bopt`          | Prevalence of SUR events before optimizations                |
+| `user`                     | Proportion of users                                          |
+| `prevalence_bopt(%)`       | Prevalence of SUR events before optimizations                |
 | `frequency_bopt`           | Frequency of SUR events before optimizations                 |
-| `rate_bopt`                | Frame drop rate of the model before optimizations            |
-| `energy_bopt`              | Daily device energy before optimizations                     |
-| `prevalence_aopt`          | Prevalence of SUR events after optimizations                 |
+| `rate_bopt(%)`             | Frame drop rate of the model before optimizations            |
+| `energy_bopt`              | Daily device energy before optimizations in mAh              |
+| `prevalence_aopt(%)`       | Prevalence of SUR events after optimizations                 |
 | `frequency_aopt`           | Frequency of SUR events after optimizations                  |
-| `rate_aopt`                | Frame drop rate of the model after optimizations             |
-| `energy_aopt`              | Daily device energy after optimizations                      |
+| `rate_aopt(%)`             | Frame drop rate of the model after optimizations             |
+| `energy_aopt`              | Daily device energy after optimizations in mAh               |
 
 ### apps.xlsx
 
@@ -82,14 +82,14 @@ dataset
 | Column Name               | Description                                                                              |
 | ------------------------- | -----------------------------------------------------------------------------------------|
 | `app`                     | App name                                                                                 |
-| `foreground_2019`         | Memory consumption of apps in 2019 when running in the foreground                        |
-| `background_2019`         | Memory consumption of apps in 2019 when running in the background                        |
-| `foreground_2020`         | Memory consumption of apps in 2020 when running in the foreground                        |
-| `background_2020`         | Memory consumption of apps in 2020 when running in the background                        |
-| `foreground_2021`         | Memory consumption of apps in 2021 when running in the foreground                        |
-| `background_2021`         | Memory consumption of apps in 2021 when running in the background                        |
-| `foreground_2022`         | Memory consumption of apps in 2022 when running in the foreground                        |
-| `background_2022`         | Memory consumption of apps in 2022 when running in the background                        |
+| `foreground_2019`         | Memory consumption of apps in 2019 when running in the foreground in MB                  |
+| `background_2019`         | Memory consumption of apps in 2019 when running in the background in MB                  |
+| `foreground_2020`         | Memory consumption of apps in 2020 when running in the foreground in MB                  |
+| `background_2020`         | Memory consumption of apps in 2020 when running in the background in MB                  |
+| `foreground_2021`         | Memory consumption of apps in 2021 when running in the foreground in MB                  |
+| `background_2021`         | Memory consumption of apps in 2021 when running in the background in MB                  |
+| `foreground_2022`         | Memory consumption of apps in 2022 when running in the foreground in MB                  |
+| `background_2022`         | Memory consumption of apps in 2022 when running in the background in MB                  |
 
 ### iOS-Android.xlsx
 
@@ -100,8 +100,8 @@ dataset
 | `iOS_CPU_utilization(%)`           | CPU utilization of apps on iOS devices                  |
 | `Android_process_number`           | Number of processes of apps on Android devices          |
 | `iOS_process_number`               | Number of processes of apps on iOS devices              |
-| `Android_memory_consumption(MB)`   | Memory consumption of the app on Android devices|
-| `iOS_memory_consumption(MB)`       | Memory consumption of the app on iOS devices    |
+| `Android_memory_consumption`       | Memory consumption of the app on Android devices in MB  |
+| `iOS_memory_consumption`           | Memory consumption of the app on iOS devices in MB      |
 
 ### energy.csv
 
@@ -112,15 +112,15 @@ dataset
 | `event_name`                                | Event Name                                                                                         |
 | `model`                                     | Device model                                                                                       |
 | `version`                                   | Android version                                                                                    |
-| `battery_capacity`                          | Total capacity of the device's battery (typically measured in mAh)                                 |
-| `battery_life_screen_on_duration`           | Duration the battery lasts with the screen turned on                                               |
-| `battery_life_screen_off_duration`          | Duration the battery lasts with the screen turned off                                              |
-| `battery_life_screen_off_at_night`          | Duration the battery lasts overnight with the screen turned off                                    |
-| `battery_life_screen_off_dry`               | Duration the battery lasts with the screen turned off without any background processes running     |
-| `battery_life_screen_off_at_night_dry`      | Duration the battery lasts overnight with the screen turned off without any background processes   |
-| `battery_charging_duration`                 | Duration taken to charge the battery                                                               |
-| `battery_on_battery_duration`               | Duration the device runs on battery power without charging                                         |
-| `battery_total_consumption`                 | Total battery consumption                                                                          |
+| `battery_capacity`                          | Total capacity of the device's battery in mAh                                                      |
+| `battery_life_screen_on_duration`           | Duration the battery lasts with the screen turned on in seconds                                    |
+| `battery_life_screen_off_duration`          | Duration the battery lasts with the screen turned off in seconds                                   |
+| `battery_life_screen_off_at_night`          | Duration the battery lasts overnight with the screen turned off in seconds                         |
+| `battery_life_screen_off_dry`               | Duration the battery lasts with the screen turned off without any background processes running in seconds|
+| `battery_life_screen_off_at_night_dry`      | Duration the battery lasts overnight with the screen turned off without any background processes in seconds|
+| `battery_charging_duration`                 | Duration taken to charge the battery in seconds                                                    |
+| `battery_on_battery_duration`               | Duration the device runs on battery power without charging in seconds                              |
+| `battery_total_consumption`                 | Total battery consumption in mAh                                                                   |
 
 
 ## Codebase Organization

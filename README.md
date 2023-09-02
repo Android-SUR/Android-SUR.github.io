@@ -25,6 +25,7 @@ For each file in the dataset, we list the specific information coupled with the 
 dataset
 |---- models.xlsx
 |---- apps.xlsx
+|---- app-scenario.xlsx
 |---- memory.xlsx
 |---- iOS-Android.xlsx
 |---- energy.xlsx
@@ -68,6 +69,14 @@ dataset
 | `ANDAUTPU`                 | Average number of daily app usage times per user             |
 | `NDSURPU`                  | Number of daily SUR events per user                          |
 
+### app-scenario.xlsx
+
+| Column Name                | Description                                                                          |
+| -------------------------- | ------------------------------------------------------------------------------------ |
+| `scenario`                 | Specific functions within an app, such as com.tencent.mm/com.tencent.mm.ui.LauncherUI|
+| `SUR_cnt`                  | Daily number of SUR events of such scenario                                          |
+| `device_cnt`               | Daily number of devices where SUR events occurs in such scenario                     |
+
 ### memory.xlsx
 
 | Column Name               | Description                                                                              |
@@ -95,6 +104,23 @@ dataset
 | `iOS_memory_consumption(MB)`       | Memory consumption of the app on iOS devices    |
 
 ### energy.xlsx
+
+| Column Name                                 | Description                                                                                        |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------|
+| `oneid`                                     | Unique identifier for the device 											                       |
+| `date`                                      | Event date                                                                                         |
+| `event_name`                                | Event Name                                                                                         |
+| `model`                                     | Device model                                                                                       |
+| `version`                                   | Android version                                                                                    |
+| `battery_capacity`                          | Total capacity of the device's battery (typically measured in mAh)                                 |
+| `battery_life_screen_on_duration`           | Duration the battery lasts with the screen turned on                                               |
+| `battery_life_screen_off_duration`          | Duration the battery lasts with the screen turned off                                              |
+| `battery_life_screen_off_at_night`          | Duration the battery lasts overnight with the screen turned off                                    |
+| `battery_life_screen_off_dry`               | Duration the battery lasts with the screen turned off without any background processes running     |
+| `battery_life_screen_off_at_night_dry`      | Duration the battery lasts overnight with the screen turned off without any background processes   |
+| `battery_charging_duration`                 | Duration taken to charge the battery                                                               |
+| `battery_on_battery_duration`               | Duration the device runs on battery power without charging                                         |
+| `battery_total_consumption`                 | Total battery consumption                                                                          |
 
 
 ## Codebase Organization

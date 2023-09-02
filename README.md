@@ -24,8 +24,8 @@ For each file in the dataset, we list the specific information coupled with the 
 ```
 dataset
 |---- models.xlsx
-|---- app-SUR.xlsx
-|---- app-memory.xlsx
+|---- apps.xlsx
+|---- memory.xlsx
 |---- iOS-Android.xlsx
 |---- energy.xlsx
 ```

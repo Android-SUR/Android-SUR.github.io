@@ -1,19 +1,3 @@
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-<br />
-
-<center style="font-size:45px;color:green;line-height:-10px"> Rethinking the Process Management Model</center>
-<center style="font-size:45px;color:green;line-height:110px"> for Interactive Mobile Systems </center>
-
 ![license](https://img.shields.io/badge/Platform-Android-green "Android")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
 

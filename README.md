@@ -28,7 +28,7 @@ dataset
 |---- app-scenario.xlsx
 |---- memory.xlsx
 |---- iOS-Android.xlsx
-|---- energy.xlsx
+|---- energy.csv
 ```
 
 ### models.xlsx

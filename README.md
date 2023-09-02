@@ -23,18 +23,61 @@ For each file in the dataset, we list the specific information coupled with the 
 
 ```
 dataset
-|---- model-SUR.xlsx
+|---- models.xlsx
 |---- app-SUR.xlsx
 |---- app-memory.xlsx
 |---- iOS-Android.xlsx
 |---- energy.xlsx
 ```
 
-### model-SUR.xlsx
+### models.xlsx
+| Column Name                | Description                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| `model`                    | Device model                                                 |
+| `release_time`             | Release time of the model                                    |
+| `CPU_model`                | CPU type                                                     |
+| `CPU_frequency`            | CPU frequency                                                |
+| `memory`                   | RAM capacity                                                 |
+| `storage`                  | ROM capacity                                                 |
+| `version`                  | Android version                                              |
+| `user`                     | Proportion of users                                         |
+| `prevalence_bopt`          | Prevalence of SUR events before optimizations                |
+| `frequency_bopt`           | Frequency of SUR events before optimizations                 |
+| `rate_bopt`                | Frame drop rate of the model before optimizations            |
+| `energy_bopt`              | Daily device energy before optimizations                     |
+| `prevalence_aopt`          | Prevalence of SUR events after optimizations                 |
+| `frequency_aopt`           | Frequency of SUR events after optimizations                  |
+| `rate_aopt`                | Frame drop rate of the model after optimizations             |
+| `energy_aopt`              | Daily device energy after optimizations                      |
 
-### app-SUR.xlsx
+### apps.xlsx
+| Column Name                | Description                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| `app`                      | App name                                                     |
+| `package`                  | App packgae name                                             |
+| `category`                 | App Category                                                 |
+| `DAU`                      | Daily active users                                           |
+| `DAUTPU(s)`                | Daily average usage time per user in seconds                 |
+| `PDAU(%)`                  | Proportion of daily active user                              |
+| `NDAUT`                    | Number of daily app usage times                              |
+| `PDAUT(%)`                 | Proportion of daily app usage times                          |
+| `PDAUTPU(%)`               | Proportion of daily app usage times per user                 |
+| `PDUD(%)`                  | Proportion of daily usage duration                           |
+| `ANDAUTPU`                 | Average number of daily app usage times per user             |
+| `NDSURPU`                  | Number of daily SUR events per user                          |
 
-### app-memory.xlsx
+### memory.xlsx
+| Column Name               | Description                                                                              |
+| ------------------------- | -----------------------------------------------------------------------------------------|
+| `app`                     | App name                                                                                 |
+| `foreground_2019`         | Memory consumption of apps in 2019 when running in the foreground                        |
+| `background_2019`         | Memory consumption of apps in 2019 when running in the background                        |
+| `foreground_2020`         | Memory consumption of apps in 2020 when running in the foreground                        |
+| `background_2020`         | Memory consumption of apps in 2020 when running in the background                        |
+| `foreground_2021`         | Memory consumption of apps in 2021 when running in the foreground                        |
+| `background_2021`         | Memory consumption of apps in 2021 when running in the background                        |
+| `foreground_2022`         | Memory consumption of apps in 2022 when running in the foreground                        |
+| `background_2022`         | Memory consumption of apps in 2022 when running in the background                        |
 
 ### iOS-Android.xlsx
 

@@ -79,17 +79,17 @@ dataset
 
 ### memory.xlsx
 
-| Column Name               | Description                                                                              |
-| ------------------------- | -----------------------------------------------------------------------------------------|
-| `app`                     | App name                                                                                 |
-| `foreground_2019`         | Memory consumption of apps in 2019 when running in the foreground in MB                  |
-| `background_2019`         | Memory consumption of apps in 2019 when running in the background in MB                  |
-| `foreground_2020`         | Memory consumption of apps in 2020 when running in the foreground in MB                  |
-| `background_2020`         | Memory consumption of apps in 2020 when running in the background in MB                  |
-| `foreground_2021`         | Memory consumption of apps in 2021 when running in the foreground in MB                  |
-| `background_2021`         | Memory consumption of apps in 2021 when running in the background in MB                  |
-| `foreground_2022`         | Memory consumption of apps in 2022 when running in the foreground in MB                  |
-| `background_2022`         | Memory consumption of apps in 2022 when running in the background in MB                  |
+| Column Name               | Description                                                                |
+| ------------------------- | ---------------------------------------------------------------------------|
+| `app`                     | App name                                                                   |
+| `foreground_2019`         | Memory consumption of apps in 2019 running in the foreground in MB         |
+| `background_2019`         | Memory consumption of apps in 2019 running in the background in MB         |
+| `foreground_2020`         | Memory consumption of apps in 2020 running in the foreground in MB         |
+| `background_2020`         | Memory consumption of apps in 2020 running in the background in MB         |
+| `foreground_2021`         | Memory consumption of apps in 2021 running in the foreground in MB         |
+| `background_2021`         | Memory consumption of apps in 2021 running in the background in MB         |
+| `foreground_2022`         | Memory consumption of apps in 2022 running in the foreground in MB         |
+| `background_2022`         | Memory consumption of apps in 2022 running in the background in MB         |
 
 ### iOS-Android.xlsx
 

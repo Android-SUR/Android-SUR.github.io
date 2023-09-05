@@ -17,7 +17,7 @@
 Our work focuses on studying slow UI responsiveness (SUR) for interactive mobile systems (especially for Android). To this end, as a major Android phone vendor, we conduct a large-scale crowd-sourced study with 47M Android phones to analyze SUR events. We deploy a continuous monitoring infrastructure to collect system-level traces upon the occurrence of SUR events through a customized Android system (dubbed Android-MOD). We then analyze the collected data and uncover multi-fold root causes of SUR events. To address the major root cause, we develop an effective solution by remodeling the process management of Android, which greatly reduces both SUR occurrence and battery consumption. This repository contains our implementation of continuous monitoring infrastructure, our released data, and the implementation of our optimizations. Note that, our Android-MOD system is built upon vanilla Android 10/11/12 and Linux kernel 5.12/5.13/5.14. Therefore, you’ll be able to run codes in this repo by patching these modifications to the proper framework and kernel components.
 
 ## Data Release
-We have released a portion of the representative sample data (with proper anonymization) for reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data). As to the full dataset, we are still in discussion with the authority to what extent can it be released. We will make the rest dataset in public as soon as possible after receiving the permission and desensitizing the dataset.
+We have released a portion of the representative sample data (with proper anonymization) for reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data). As to the full dataset, we are still in discussion with the authority to what extent can it be released. We will make the rest dataset public as soon as possible after receiving the permission and desensitizing the dataset.
 
 For each file in the dataset, we list the specific information coupled with the regarding description as follows.
 
@@ -119,7 +119,7 @@ dataset
 | `battery_life_screen_off_dry`               | Duration the battery lasts with the screen turned off without any background processes running (in seconds)|
 | `battery_life_screen_off_at_night_dry`      | Duration the battery lasts overnight with the screen turned off without any background processes (in seconds)|
 | `battery_charging_duration`                 | Duration taken to charge the battery (in seconds)                                                  |
-| `battery_on_battery_duration`               | Duration the device runs on battery power without charging (in seconds)                            |
+| `battery_on_battery_duration`               | Duration the device battery lasts without charging (in seconds)                            |
 | `battery_total_consumption`                 | Total battery consumption (in mAh)                                                                 |
 
 
@@ -140,7 +140,7 @@ code
 For modifications pertaining to Linux, our code is executed and validated on Linux kernel 5.12, 5.13, and 5.14. It's worth noting that, despite substantial revisions introduced in Linux kernel 5.13 and 5.14 relative to 5.12, our code remains compatible across these versions due to the consistency of specific tracing points and functions.
 
 ### Android
-For Android-related modifications, currently our code is run and tested in Android 10, 11, and 12 (AOSP).
+For Android-related modifications, our code is run and tested in Android 10, 11, and 12 (AOSP).
 Note that although quite a number of changes have been made in Android 12/11 since Android 10, our code is applicable to both given that concerned tracing points remain unchanged.
 
 ## For Developers

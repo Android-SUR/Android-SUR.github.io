@@ -1,0 +1,7 @@
+config LOG
+	tristate "log"
+	default n
+
+config EXCEPTION_LOG
+	tristate "exception log"
+	default n

@@ -137,8 +137,7 @@ code
 
 ## Platform Requirements
 ### Linux
-For Linux-related modifications, currently our code is run and tested in Linux kernel 5.12, 5.13, and 5.14.
-Note that although quite a number of changes have been made in Linux kernel 5.14/5.13 since Linux kernel 5.12, our code is applicable to both given that concerned tracing points and functions remain unchanged.
+For modifications pertaining to Linux, our code is executed and validated on Linux kernel 5.12, 5.13, and 5.14. It's worth noting that, despite substantial revisions introduced in Linux kernel 5.13 and 5.14 relative to 5.12, our code remains compatible across these versions due to the consistency of specific tracing points and functions.
 
 ### Android
 For Android-related modifications, currently our code is run and tested in Android 10, 11, and 12 (AOSP).

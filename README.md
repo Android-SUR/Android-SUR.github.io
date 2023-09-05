@@ -17,7 +17,7 @@
 This repository contains our continuous monitoring infrastructure based on Android-MOD, a customized Android system that records system-level traces upon the occurrence of slow UI responsiveness (SUR) events, as well as our efforts to improve UI responsiveness on Android devices. Our Android-MOD system is built upon vanilla Android 10/11/12 and Linux kernel 5.12/5.13/5.14. Therefore, you’ll be able to run codes in this repo by patching these modifications to the proper framework and kernel components.
 
 ## Data Release
-We have released a portion of the representative sample data (with proper anonymization) for references [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data). As to the full dataset, we are still in discussion with the authority to what extend can it be released. We will make the rest dataset in public as soon as possible after receiving the permission and desensitizing the dataset.
+We have released a portion of the representative sample data (with proper anonymization) for reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data). As to the full dataset, we are still in discussion with the authority to what extent can it be released. We will make the rest dataset in public as soon as possible after receiving the permission and desensitizing the dataset.
 
 For each file in the dataset, we list the specific information coupled with the regarding description as follows.
 
@@ -57,7 +57,7 @@ dataset
 | Column Name                | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
 | `app`                      | App name                                                     |
-| `package`                  | App packgae name                                             |
+| `package`                  | App package name                                             |
 | `category`                 | App Category                                                 |
 | `DAU`                      | Daily active users                                           |
 | `DAUTPU(s)`                | Daily average usage time per user in seconds                 |
@@ -73,9 +73,9 @@ dataset
 
 | Column Name                | Description                                                                     |
 | -------------------------- | --------------------------------------------------------------------------------|
-| `scenario`                 | Specific functions within apps, e.g. com.tencent.mm/com.tencent.mm.ui.LauncherUI|
-| `SUR_cnt`                  | Daily number of SUR events of such scenario                                     |
-| `device_cnt`               | Daily number of devices where SUR events occurs in such scenario                |
+| `scenario`                 | Specific scenarios within apps, e.g. com.tencent.mm/com.tencent.mm.ui.LauncherUI|
+| `SUR_cnt`                  | Daily number of SUR events of such a scenario                                     |
+| `device_cnt`               | Daily number of devices where SUR events occur in such a scenario                |
 
 ### memory.xlsx
 
@@ -124,7 +124,7 @@ dataset
 
 
 ## Codebase Organization
-Currently, We have release a portion of the implementation code for references [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code). For the full code, we are scrutinizing the codebase to avoid possible anonymity violations. After that, we will release the source code of this study as soon as we have finished examining it and acquired its release permission from the authority. The codebase is organized as follows.
+Currently, We have released a portion of the implementation code for reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code). For the full code, we are scrutinizing the codebase to avoid possible anonymity violations. After that, we will release the source code of this study as soon as we have finished examining it and acquired its release permission from the authority. The codebase is organized as follows.
 
 ```
 code
@@ -136,12 +136,12 @@ code
 ## Platform Requirements
 ### Linux
 For Linux-related modifications, currently our code is run and tested in Linux kernel 5.12, 5.13, and 5.14.
-Note that despite quite a number of changes have been made in Linux kernel 5.14/5.13 since Linux kernel 5.12, our code is applicable to both given that concerned tracing points and functions remain unchanged.
+Note that although quite a number of changes have been made in Linux kernel 5.14/5.13 since Linux kernel 5.12, our code is applicable to both given that concerned tracing points and functions remain unchanged.
 
 ### Android
 For Android-related modifications, currently our code is run and tested in Android 10, 11, and 12 (AOSP).
-Note that despite quite a number of changes have been made in Android 12/11 since Android 10, our code is applicable to both given that concerned tracing points remain unchanged.
+Note that although quite a number of changes have been made in Android 12/11 since Android 10, our code is applicable to both given that concerned tracing points remain unchanged.
 
 ## For Developers
-Our code is licensed under Apache 2.0 in accordance with AOSP's and Kernel's license. Please adhere to the corresponding open source policy when applying modifications and commercial uses.
-Also, some of our code is currently not available but will be relased soon once we have obatained permissions.
+Our code is licensed under Apache 2.0 in accordance with AOSP’s and Kernel’s licenses. Please adhere to the corresponding open-source policy when applying modifications and commercial uses. 
+Also, some of our code is currently not available but will be released soon once we have obtained permission.

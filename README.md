@@ -129,10 +129,10 @@ Currently, We have released a portion of the implementation code for reference [
 ```
 code
 |---- continuous monitor infrastructure
-|---- uniform authentic sensing
+|---- remodeling
 ```
 + `continuous monitor infrastructure/` contains the source code of our continuous monitor infrastructure.
-+ `uniform authentic sensing/` includes several modules for sensing the actual usage of Android subsystems (e.g., audio and GPS).
++ `remodeling/` includes several modules for remodeling the process management of Android (e.g., the uniform authentic sensing layer).
 
 
 ## Platform Requirements

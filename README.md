@@ -36,31 +36,31 @@ dataset
 | Column Name                | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
 | `model`                    | Device model                                                 |
-| `release_time`             | Release time of the model                                    |
+| `release_time`             | Release time of the device model                             |
 | `CPU_model`                | CPU type                                                     |
-| `CPU_frequency`            | CPU frequency                                                |
-| `memory`                   | RAM capacity in MB                                           |
-| `storage`                  | ROM capacity in MB                                           |
+| `CPU_frequency`            | CPU frequency (in Hz)                                        |
+| `memory`                   | RAM capacity (in MB)                                         |
+| `storage`                  | ROM capacity (in MB)                                         |
 | `version`                  | Android version                                              |
-| `user`                     | Proportion of users                                          |
+| `user`                     | Proportion of users for this model                           |
 | `prevalence_bopt(%)`       | Prevalence of SUR events before optimizations                |
 | `frequency_bopt`           | Frequency of SUR events before optimizations                 |
 | `rate_bopt(%)`             | Frame drop rate of the model before optimizations            |
-| `energy_bopt`              | Daily device energy before optimizations in mAh              |
+| `energy_bopt`              | Daily device energy before optimizations (in mAh)            |
 | `prevalence_aopt(%)`       | Prevalence of SUR events after optimizations                 |
 | `frequency_aopt`           | Frequency of SUR events after optimizations                  |
 | `rate_aopt(%)`             | Frame drop rate of the model after optimizations             |
-| `energy_aopt`              | Daily device energy after optimizations in mAh               |
+| `energy_aopt`              | Daily device energy after optimizations (in mAh)             |
 
 ### apps.xlsx
 
 | Column Name                | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
-| `app`                      | App name                                                     |
-| `package`                  | App package name                                             |
-| `category`                 | App Category                                                 |
-| `DAU`                      | Daily active users                                           |
-| `DAUTPU(s)`                | Daily average usage time per user in seconds                 |
+| `app`                      | Application name                                             |
+| `package`                  | Unique application package identifier                        |
+| `category`                 | Genre or classification of the application                   |
+| `DAU`                      | Count of daily active users                                  |
+| `DAUTPU(s)`                | Daily average usage time per user (in seconds)               |
 | `PDAU(%)`                  | Proportion of daily active user                              |
 | `NDAUT`                    | Number of daily app usage times                              |
 | `PDAUT(%)`                 | Proportion of daily app usage times                          |
@@ -82,14 +82,14 @@ dataset
 | Column Name               | Description                                                                |
 | ------------------------- | ---------------------------------------------------------------------------|
 | `app`                     | App name                                                                   |
-| `foreground_2019`         | Memory consumption of apps in 2019 running in the foreground in MB         |
-| `background_2019`         | Memory consumption of apps in 2019 running in the background in MB         |
-| `foreground_2020`         | Memory consumption of apps in 2020 running in the foreground in MB         |
-| `background_2020`         | Memory consumption of apps in 2020 running in the background in MB         |
-| `foreground_2021`         | Memory consumption of apps in 2021 running in the foreground in MB         |
-| `background_2021`         | Memory consumption of apps in 2021 running in the background in MB         |
-| `foreground_2022`         | Memory consumption of apps in 2022 running in the foreground in MB         |
-| `background_2022`         | Memory consumption of apps in 2022 running in the background in MB         |
+| `foreground_2019`         | Memory consumption of apps in 2019 running in the foreground (in MB)       |
+| `background_2019`         | Memory consumption of apps in 2019 running in the background (in MB)       |
+| `foreground_2020`         | Memory consumption of apps in 2020 running in the foreground (in MB)       |
+| `background_2020`         | Memory consumption of apps in 2020 running in the background (in MB)       |
+| `foreground_2021`         | Memory consumption of apps in 2021 running in the foreground (in MB)       |
+| `background_2021`         | Memory consumption of apps in 2021 running in the background (in MB)       |
+| `foreground_2022`         | Memory consumption of apps in 2022 running in the foreground (in MB)       |
+| `background_2022`         | Memory consumption of apps in 2022 running in the background (in MB)       |
 
 ### iOS-Android.xlsx
 
@@ -100,8 +100,8 @@ dataset
 | `iOS_CPU_utilization(%)`           | CPU utilization of apps on iOS devices                  |
 | `Android_process_number`           | Number of processes of apps on Android devices          |
 | `iOS_process_number`               | Number of processes of apps on iOS devices              |
-| `Android_memory_consumption`       | Memory consumption of the app on Android devices in MB  |
-| `iOS_memory_consumption`           | Memory consumption of the app on iOS devices in MB      |
+| `Android_memory_consumption`       | Memory consumption of the app on Android devices (in MB)|
+| `iOS_memory_consumption`           | Memory consumption of the app on iOS devices (in MB)    |
 
 ### energy.csv
 
@@ -112,15 +112,15 @@ dataset
 | `event_name`                                | Event Name                                                                                         |
 | `model`                                     | Device model                                                                                       |
 | `version`                                   | Android version                                                                                    |
-| `battery_capacity`                          | Total capacity of the device's battery in mAh                                                      |
-| `battery_life_screen_on_duration`           | Duration the battery lasts with the screen turned on in seconds                                    |
-| `battery_life_screen_off_duration`          | Duration the battery lasts with the screen turned off in seconds                                   |
-| `battery_life_screen_off_at_night`          | Duration the battery lasts overnight with the screen turned off in seconds                         |
-| `battery_life_screen_off_dry`               | Duration the battery lasts with the screen turned off without any background processes running in seconds|
-| `battery_life_screen_off_at_night_dry`      | Duration the battery lasts overnight with the screen turned off without any background processes in seconds|
-| `battery_charging_duration`                 | Duration taken to charge the battery in seconds                                                    |
-| `battery_on_battery_duration`               | Duration the device runs on battery power without charging in seconds                              |
-| `battery_total_consumption`                 | Total battery consumption in mAh                                                                   |
+| `battery_capacity`                          | Total capacity of the device's battery (in mAh)                                                    |
+| `battery_life_screen_on_duration`           | Duration the battery lasts with the screen turned on (in seconds)                                  |
+| `battery_life_screen_off_duration`          | Duration the battery lasts with the screen turned off (in seconds)                                 |
+| `battery_life_screen_off_at_night`          | Duration the battery lasts overnight with the screen turned off (in seconds)                       |
+| `battery_life_screen_off_dry`               | Duration the battery lasts with the screen turned off without any background processes running (in seconds)|
+| `battery_life_screen_off_at_night_dry`      | Duration the battery lasts overnight with the screen turned off without any background processes (in seconds)|
+| `battery_charging_duration`                 | Duration taken to charge the battery (in seconds)                                                  |
+| `battery_on_battery_duration`               | Duration the device runs on battery power without charging (in seconds)                            |
+| `battery_total_consumption`                 | Total battery consumption (in mAh)                                                                 |
 
 
 ## Codebase Organization

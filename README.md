@@ -57,14 +57,14 @@ dataset
 | Column Name                | Description                                                  |
 | -------------------------- | ------------------------------------------------------------ |
 | `app`                      | Application name                                             |
-| `package`                  | Unique application package identifier                        |
+| `package`                  | Application package name                                     |
 | `category`                 | Genre or classification of the application                   |
-| `DAU`                      | Count of daily active users                                  |
-| `DAUTPU(s)`                | Daily average usage time per user (in seconds)               |
+| `DAU`                      | Daily active users                                           |
+| `ADUEDPU(s)`               | Average daily user engagement duration per user (in seconds) |
 | `PDAU(%)`                  | Proportion of daily active user                              |
-| `NDAUT`                    | Number of daily app usage times                              |
-| `PDAUT(%)`                 | Proportion of daily app usage times                          |
-| `PDAUTPU(%)`               | Proportion of daily app usage times per user                 |
+| `DAUC`                     | Daily app usage count                                        |
+| `PDAUC(%)`                 | Proportion of daily app usage count                          |
+| `PDAUCPU(%)`               | Proportion of daily app usage count per user                 |
 | `PDUD(%)`                  | Proportion of daily usage duration                           |
 | `ANDAUTPU`                 | Average number of daily app usage times per user             |
 | `NDSURPU`                  | Number of daily SUR events per user                          |
@@ -74,8 +74,8 @@ dataset
 | Column Name                | Description                                                                     |
 | -------------------------- | --------------------------------------------------------------------------------|
 | `scenario`                 | Specific scenarios within apps, e.g. com.tencent.mm/com.tencent.mm.ui.LauncherUI|
-| `SUR_cnt`                  | Daily number of SUR events of such a scenario                                     |
-| `device_cnt`               | Daily number of devices where SUR events occur in such a scenario                |
+| `SUR_cnt`                  | Daily number of SUR events of such a scenario                                   |
+| `device_cnt`               | Daily number of devices where SUR events occur in such a scenario               |
 
 ### memory.xlsx
 

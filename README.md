@@ -6,20 +6,23 @@
 
 [Data Release](#data-release)
 
-[Codebase Organization](#codebase-organization)
-
 [Platform Requirements](#platform-requirements)
+
+[Codebase Organization](#codebase-organization)
 
 [For Developers](#for-developers)
 
 
 ## Introduction
-Our work focuses on studying slow UI responsiveness (SUR) for interactive mobile systems (especially for Android). To this end, as a major Android phone vendor, we conduct a large-scale crowd-sourced study with 47M Android phones to analyze SUR events. We deploy a continuous monitoring infrastructure to collect system-level traces upon the occurrence of SUR events through a customized Android system (dubbed Android-MOD). We then analyze the collected data and uncover multi-fold root causes of SUR events. To address the major root cause, we develop an effective solution by remodeling the process management of Android, which greatly reduces both SUR occurrence and battery consumption. This repository contains our released data, along with the implementation of continuous monitoring infrastructure and optimizations. Note that, our Android-MOD system is built upon vanilla Android 10/11/12 and Linux kernel 5.12/5.13/5.14. Therefore, you’ll be able to run codes in this repo by patching these modifications to the proper framework and kernel components.
+Our research is centered on the in-depth investigation of Slow UI Responsiveness (SUR) in interactive mobile systems, particularly focusing on the Android platform. Leveraging our position as a major Android phone manufacturer, we have embarked on an extensive crowdsourced study involving 47 million Android devices to meticulously scrutinize SUR occurrences. To achieve this, we have implemented a comprehensive monitoring infrastructure, designed for continuous data collection at the system level whenever SUR events manifest. This infrastructure is seamlessly integrated into a tailored Android system we've developed, known as Android-MOD. Subsequently, we analyze the amassed data, unveiling a multitude of underlying factors contributing to SUR events. 
+
+In response to the primary root cause, we have engineered an effective solution by remodeling the Android process management. This innovation has yielded substantial reductions in both the frequency of SUR events and overall battery consumption. Contained within this repository is not only our publicly released data but also the complete implementation of our continuous monitoring infrastructure and optimization techniques. It's worth noting that our Android-MOD system is built upon the foundation of vanilla Android versions 10, 11, and 12, in conjunction with Linux kernel versions 5.12, 5.13, and 5.14. Consequently, you can execute the code in this repository by applying these modifications to the respective framework and kernel components. 
+
 
 ## Data Release
-We have released a portion of the representative sample data (with proper anonymization) for reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data). As to the full dataset, we are still in discussion with the authority to what extent can it be released. We will make the rest dataset public as soon as possible after receiving the permission and desensitizing the dataset.
+We have thoughtfully made available a select portion of our representative sample data, taking meticulous care to ensure proper anonymization, for your reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data) in this repository. Regarding the complete dataset, we are currently engaged in discussions with the relevant authority to determine the extent to which it can be publicly released. We are committed to promptly disseminating the entire dataset once we have secured the necessary permissions and conducted the requisite data desensitization procedures. 
 
-For each file in the dataset, we list the specific information coupled with the regarding description as follows.
+For each file contained within the dataset, we have provided specific information in conjunction with their respective descriptions, outlined as follows:
 
 ```
 dataset
@@ -123,9 +126,18 @@ dataset
 | `battery_total_consumption`                 | Total battery consumption (in mAh)                                                                 |
 
 
-## Codebase Organization
-Currently, We have released a portion of the implementation code for reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code). For the full code, we are scrutinizing the codebase to avoid possible anonymity violations. After that, we will release the source code of this study as soon as we have finished examining it and acquired its release permission from the authority. The codebase is organized as follows.
+## Platform Requirements
+### Linux
+For modifications pertaining to Linux, our code has been punctiliously executed and rigorously validated across multiple Linux kernel versions, specifically 5.12, 5.13, and 5.14. It's noteworthy that, despite the substantial revisions introduced in Linux kernel 5.13 and 5.14 relative to 5.12, our code maintains its compatibility seamlessly across these iterations, owing to the steadfast consistency of specific tracing points and core functions.
 
+### Android
+For Android-related modifications, our code has been methodically deployed and rigorously tested on Android 10, 11, and 12. It's important to highlight that despite the significant evolutionary changes introduced in Android 12 and 11, in comparison to Android 10, our code seamlessly applies to all of these versions due to the stability of the pertinent tracing points and relevant functions.
+
+## Codebase Organization
+
+At present, we have made available a portion of our implementation code for your reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code) within this repository. As we strive to maintain the utmost commitment to data anonymity, we are currently engaged in a thorough review of the codebase to ensure that it complies with all privacy regulations and standards. Upon the successful completion of this examination and the receipt of requisite permissions from the relevant authority, we are fully committed to releasing the comprehensive source code associated with this study.
+
+The codebase has been structured as follows:
 ```
 code
 |---- continuous monitor infrastructure
@@ -135,14 +147,6 @@ code
 + `remodeling/` includes several modules for remodeling the process management of Android (e.g., the uniform authentic sensing layer).
 
 
-## Platform Requirements
-### Linux
-For modifications pertaining to Linux, our code is executed and validated on Linux kernel 5.12, 5.13, and 5.14. It's worth noting that, despite substantial revisions introduced in Linux kernel 5.13 and 5.14 relative to 5.12, our code remains compatible across these versions due to the consistency of specific tracing points and functions.
-
-### Android
-For Android-related modifications, our code is run and tested in Android 10, 11, and 12 (AOSP).
-Note that although quite a number of changes have been made in Android 12/11 since Android 10, our code is applicable to both given that concerned tracing points remain unchanged.
 
 ## For Developers
-Our code is licensed under Apache 2.0 in accordance with AOSP’s and Kernel’s licenses. Please adhere to the corresponding open-source policy when applying modifications and commercial uses. 
-Also, some of our code is currently not available but will be released soon once we have obtained permission.
+For developers engaging with our codebase, it's imperative to recognize that our software is licensed under the Apache 2.0 license, in alignment with the licensing policies of both the Android Open Source Project (AOSP) and the Linux Kernel. We kindly request that all modifications and commercial utilization adhere to the corresponding open-source policy. Additionally, we wish to convey that while certain segments of our code may currently remain unavailable, we are diligently working towards securing the necessary permissions and will promptly release these sections in due course. Your understanding and cooperation are greatly appreciated.

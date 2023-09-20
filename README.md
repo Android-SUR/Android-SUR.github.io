@@ -14,13 +14,13 @@
 
 
 ## Introduction
-Our research is centered on the in-depth investigation of Slow UI Responsiveness (SUR) in interactive mobile systems, particularly focusing on the Android platform. Leveraging our position as a major Android phone manufacturer, we have embarked on an extensive crowdsourced study involving 47 million Android devices to meticulously scrutinize SUR occurrences. To achieve this, we have implemented a comprehensive monitoring infrastructure, designed for continuous data collection at the system level whenever SUR events manifest. This infrastructure is seamlessly integrated into a tailored Android system we've developed, known as Android-MOD. Subsequently, we analyze the amassed data, unveiling a multitude of underlying factors contributing to SUR events. 
+Our research focuses on slow Android UI responsiveness for interactive mobile systems (especially for Android). Currently, there is a lack of comprehensive study on slow UI responsiveness in the community, making the fundamental causes behind it unclear. Leveraging our position as a major Android phone vendor, we conduct an extensive crowdsourced study involving 47 million Android devices to meticulously scrutinize SUR occurrences. To achieve this, we have implemented a continuous monitoring infrastructure for collecting in-situ data at the system level whenever SUR events manifest. This infrastructure is seamlessly integrated into a tailored Android system dubbed as Android-MOD. Subsequently, we analyze the amassed data, unveiling a multitude of underlying factors contributing to SUR events. Delving deep, our analysis reveals that the majority of SUR events are attributed to system-wise resource contention, mostly caused by the wide existence of "hogging" apps. In response to this primary root cause, we propose an effective solution by remodeling the Android process management. This innovation has yielded substantial reductions in both the occurance of SUR events and overall battery consumption. 
 
-In response to the primary root cause, we have proposed an effective solution by remodeling the Android process management. This innovation has yielded substantial reductions in both the frequency of SUR events and overall battery consumption. Contained within this repository is not only our publicly released data but also the implementation of our continuous monitoring infrastructure and optimization techniques. It's worth noting that our Android-MOD system is built upon the foundation of vanilla Android versions 10, 11, and 12, in conjunction with Linux kernel versions 5.12, 5.13, and 5.14. Consequently, developers can run the code in this repository by applying these modifications to the respective framework and kernel components. 
+This repository contains our released data and the implementation code of the continuous monitoring infrastructure and optimization techniques. It's worth noting that our Android-MOD system is built upon the foundation of vanilla Android versions 10, 11, and 12, in conjunction with Linux kernel versions 5.12, 5.13, and 5.14. Consequently, developers can run the code in this repository by applying these modifications to the respective framework and kernel components. 
 
 
 ## Data Release
-We have thoughtfully made available a select portion of our representative sample data, taking meticulous care to ensure proper anonymization, for your reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data) in this repository. Regarding the complete dataset, we are currently engaged in discussions with the relevant authority to determine the extent to which it can be publicly released. We are committed to promptly disseminating the entire dataset once we have secured the necessary permissions and conducted the requisite data desensitization procedures. 
+We have thoughtfully made available a select portion of our representative sample data [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data), taking meticulous care to ensure proper anonymization. Regarding the complete dataset, we are currently engaged in discussions with the relevant authority to determine the extent to which it can be publicly released. We will disseminate the entire dataset once we have secured the necessary permissions and conducted the requisite data desensitization procedures. 
 
 For each file contained within the dataset, we have provided specific information in conjunction with their respective descriptions, outlined as follows:
 
@@ -110,7 +110,7 @@ dataset
 
 | Column Name                                 | Description                                                                                        |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------|
-| `oneid`                                     | Unique identifier for the event 											                                             |
+| `oneid`                                     | Unique identifier for the event                                                                                          |
 | `date`                                      | Event date                                                                                         |
 | `event_name`                                | Event Name                                                                                         |
 | `model`                                     | Device model                                                                                       |
@@ -128,14 +128,13 @@ dataset
 
 ## Platform Requirements
 ### Linux
-For modifications pertaining to Linux, our code has been punctiliously executed and rigorously validated across multiple Linux kernel versions, specifically 5.12, 5.13, and 5.14. It's noteworthy that, despite the substantial revisions introduced in Linux kernel 5.13 and 5.14 relative to 5.12, our code maintains its compatibility seamlessly across these iterations, owing to the steadfast consistency of specific tracing points and core functions.
+For modifications pertaining to Linux, our code has been punctiliously executed and rigorously validated across multiple Linux kernel versions, specifically 5.12, 5.13, and 5.14. It's noteworthy that, despite the substantial revisions introduced in Linux kernel 5.13 and 5.14 relative to 5.12, our code maintains its compatibility seamlessly across these iterations, owing to the consistency of specific tracing points and core functions.
 
 ### Android
 For Android-related modifications, our code has been methodically deployed and rigorously tested on Android 10, 11, and 12. It's important to highlight that despite the significant evolutionary changes introduced in Android 12 and 11, in comparison to Android 10, our code seamlessly applies to all of these versions due to the stability of the pertinent tracing points and relevant functions.
 
 ## Codebase Organization
-
-At present, we have made available a portion of our implementation code for your reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code) within this repository. As we strive to maintain the utmost commitment to data anonymity, we are currently engaged in a thorough review of the codebase to ensure that it complies with all privacy regulations and standards. Upon the successful completion of this examination and the receipt of requisite permissions from the relevant authority, we are fully committed to releasing the comprehensive source code associated with this study.
+At present, we have made available a portion of our implementation code for your reference [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/code) within this repository. We are currently engaged in a thorough review of the codebase to ensure that it complies with all privacy regulations and standards. Upon the successful completion of this examination and the receipt of requisite permissions from the relevant authority, we will release the comprehensive source code associated with this study.
 
 The codebase has been structured as follows:
 ```
@@ -149,4 +148,4 @@ code
 
 
 ## For Developers
-For developers engaging with our codebase, it's imperative to recognize that our software is licensed under the Apache 2.0 license, in alignment with the licensing policies of both the Android Open Source Project (AOSP) and the Linux Kernel. We kindly request that all modifications and commercial utilization adhere to the corresponding open-source policy. Additionally, we wish to convey that while certain segments of our code may currently remain unavailable, we are diligently working towards securing the necessary permissions and will promptly release these sections in due course.
+For developers engaging with our codebase, it's imperative to recognize that our software is licensed under the Apache 2.0 license, in alignment with the licensing policies of both the Android Open Source Project (AOSP) and the Linux Kernel. We kindly request that all modifications and commercial utilization adhere to the corresponding open-source policy. Additionally, we wish to convey that while certain segments of our code may currently remain unavailable, we are working towards securing the necessary permissions and will promptly release these sections in due course.

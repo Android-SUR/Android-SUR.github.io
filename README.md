@@ -20,7 +20,7 @@ This repository contains our released data and the implementation code of 1) the
 
 
 ## Data Release
-We have thoughtfully made available a select portion of our representative sample data [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data), taking meticulous care to ensure proper anonymization. Regarding the complete dataset, we are currently engaged in discussions with the relevant authority to determine the extent to which it can be publicly released. We will disseminate the entire dataset once we have secured the necessary permissions and conducted the requisite data desensitization procedures. 
+We have thoughtfully made available a selective portion of our representative sample data [here](https://github.com/Android-SUR/Android-SUR.github.io/tree/main/data), taking meticulous care to ensure proper anonymization. Regarding the complete dataset, we are currently engaged in discussions with the relevant authority to determine the extent to which it can be publicly released. We will disseminate the entire dataset once we have secured the necessary permissions and conducted the requisite data desensitization procedures. 
 
 For each file contained within the dataset, we have provided specific information in conjunction with their respective descriptions, outlined as follows:
 

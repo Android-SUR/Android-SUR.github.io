@@ -48,11 +48,11 @@ dataset
 | `prevalence_bopt(%)`       | Prevalence of SUR events before optimizations                |
 | `frequency_bopt`           | Frequency of SUR events before optimizations                 |
 | `rate_bopt(%)`             | Frame drop rate of the model before optimizations            |
-| `energy_bopt`              | Daily device energy before optimizations (in mAh)            |
+| `energy_bopt`              | Daily energy consumption of the device before optimizations (in mAh)            |
 | `prevalence_aopt(%)`       | Prevalence of SUR events after optimizations                 |
 | `frequency_aopt`           | Frequency of SUR events after optimizations                  |
 | `rate_aopt(%)`             | Frame drop rate of the model after optimizations             |
-| `energy_aopt`              | Daily device energy after optimizations (in mAh)             |
+| `energy_aopt`              | Daily energy consumption of the device after optimizations (in mAh)             |
 
 ### apps.xlsx
 
